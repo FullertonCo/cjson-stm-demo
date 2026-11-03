@@ -87,3 +87,9 @@ jobs:
             build/test-results.json
             build/Testing/Temporary/LastTest.log
           if-no-files-found: ignore
+          
+      - name: Run DigiCert Code Scan composite action
+        uses: digicert/digicert-code-monitoring-action@master
+        with:
+          host: https://one.digicert.com
+          api-key: ${{ secrets.DIGICERT_BACKEND_API_KEY }}
