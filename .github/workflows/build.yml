@@ -92,6 +92,5 @@ jobs:
         uses: digicert/digicert-code-monitoring-action@v2-dev
         with:
           host: https://one.digicert.com
-          region: us
           api-key: ${{ secrets.DIGICERT_BACKEND_API_KEY }}
           digicert-cdn: "https://pki-downloads.digicert.com/stm/snapshot/stmclients"
